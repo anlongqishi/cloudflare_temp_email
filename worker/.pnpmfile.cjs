@@ -1,3 +1,9 @@
-"pnpm": {
-  "onlyBuiltDependencies": ["esbuild", "sharp", "workerd", "core-js-pure"]
+function readPackage(pkg, context) {
+  return pkg;
 }
+
+module.exports = {
+  hooks: {
+    readPackage,
+  },
+};
